@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class UI_HolaMundo : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textMeshProUGUI;
     [SerializeField] private Button button;

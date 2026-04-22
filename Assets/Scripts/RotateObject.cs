@@ -12,7 +12,12 @@ public class RotateObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (isRotating)
+        {
+            float direction = clockwise ? 1f : -1f;
+            objectToRotate.Rotate(Vector3.up, direction * rotationSpeed * Time.deltaTime);
+            Debug.Log("Rotating object: " + objectToRotate.name);
+        }
     }
 
     public void ToogleRotation()
