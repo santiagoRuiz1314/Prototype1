@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 67731969}
   - component: {fileID: 67731968}
   - component: {fileID: 67731967}
+  - component: {fileID: 67731970}
   m_Layer: 5
   m_Name: Rotar
   m_TagString: Untagged
@@ -201,7 +202,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 67731968}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 67731970}
+        m_TargetAssemblyTypeName: RotateObject, Assembly-CSharp
+        m_MethodName: ToogleRotation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &67731968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +253,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67731965}
   m_CullTransparentMesh: 1
+--- !u!114 &67731970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67731965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485ee4b6c1f3a477893141bc3188c32f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToRotate: {fileID: 208409766}
+  rotationSpeed: 100
+  clockwise: 1
+  holaMundoScript: {fileID: 754929501}
 --- !u!1 &108679191
 GameObject:
   m_ObjectHideFlags: 0
@@ -2466,6 +2495,8 @@ GameObject:
   - component: {fileID: 754929500}
   - component: {fileID: 754929499}
   - component: {fileID: 754929498}
+  - component: {fileID: 754929501}
+  - component: {fileID: 754929502}
   m_Layer: 5
   m_Name: Hola Mundo!!!
   m_TagString: Untagged
@@ -2575,6 +2606,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754929496}
   m_CullTransparentMesh: 1
+--- !u!114 &754929501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754929496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433ea19feec6740f78b52943f3e29171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMeshProUGUI: {fileID: 1690842419}
+  button: {fileID: 754929498}
+--- !u!114 &754929502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754929496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433ea19feec6740f78b52943f3e29171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMeshProUGUI: {fileID: 0}
+  button: {fileID: 0}
 --- !u!1 &790777436
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,7 +2903,7 @@ GameObject:
   - component: {fileID: 796225438}
   - component: {fileID: 796225437}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text Hola(TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3099,7 +3158,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 845519015}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1623561993}
+        m_TargetAssemblyTypeName: Scale, Assembly-CSharp
+        m_MethodName: ScaleUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &845519015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5017,6 +5088,7 @@ GameObject:
   - component: {fileID: 1623561990}
   - component: {fileID: 1623561992}
   - component: {fileID: 1623561991}
+  - component: {fileID: 1623561993}
   m_Layer: 5
   m_Name: Escala
   m_TagString: Untagged
@@ -5142,6 +5214,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623561989}
   m_CullTransparentMesh: 1
+--- !u!114 &1623561993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623561989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b02454a0a7c4c4496bafce03b5194e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holaMundoScript: {fileID: 754929501}
+  ObjectToScale: {fileID: 208409766}
+  ScaleSpeed: 0.1
+  miniScale: -0.005
 --- !u!1 &1630312237
 GameObject:
   m_ObjectHideFlags: 0
@@ -5528,7 +5616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.51875, y: 0.51574075}
-  m_AnchoredPosition: {x: 827, y: 447}
+  m_AnchoredPosition: {x: 676, y: 410}
   m_SizeDelta: {x: 164, y: 33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690842419
@@ -5958,7 +6046,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1781347476}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1623561993}
+        m_TargetAssemblyTypeName: Scale, Assembly-CSharp
+        m_MethodName: ScaleDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1781347476
 MonoBehaviour:
   m_ObjectHideFlags: 0
