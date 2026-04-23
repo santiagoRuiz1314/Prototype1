@@ -18,7 +18,7 @@ public class TraslateObjects : MonoBehaviour
         }
     }
 
-    public void StartMoveXPosition()
+    public void StartMoveXPositive()
     {
         moveDirection = Vector3.right;
     }
@@ -26,7 +26,7 @@ public class TraslateObjects : MonoBehaviour
     {
         moveDirection = Vector3.left;
     }
-    public void StartMoveYPosition()
+    public void StartMoveYPositive()
     {
         moveDirection = Vector3.up;
     }
@@ -34,7 +34,7 @@ public class TraslateObjects : MonoBehaviour
     {
         moveDirection = Vector3.down;
     }
-    public void StartMoveZPosition()
+    public void StartMoveZPositive()
     {
         moveDirection = Vector3.forward;
     }
